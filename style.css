@@ -41,8 +41,6 @@ h2{
     text-decoration:underline;
 }
 h5{
-
-    margin-top: 20px;
     text-align: center;
 }
 p{
@@ -70,18 +68,32 @@ img{
 .booksec{
     width: 100%;
     margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .bookcont{
+    flex: none;
     vertical-align: top;
     width: 300px;
-    height: 450px;
-    margin: auto;
+    height: 460px;
     border: 2px solid #333;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 0px 4px #333;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .bocov{
     background: url(غلاف.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    border-bottom: 2px solid #333;
+    box-shadow: 0px 0px 4px #333;
+}
+.bocov2{
+    background: url(غلاف-دانيال-الرجل-المحبوب-القمص-داود-لمعي-224x300.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -93,13 +105,16 @@ img{
     opacity: 0.5;
 }
 .infosec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height:145px;
     width: 100%;
 }
 .download-btn{
     display: block;
     width: 150px;
-    margin: 20px 0px 0px 70px;
     padding: 10px 50px;
     border: 2px solid #333;
     background-color:teal;
@@ -152,33 +167,34 @@ img{
         height: 370px;
         width: 270px;
     }
-    h5{
-        margin-top: 5px;
-    }
     ul,li{
         font-size: 15px;
         font-weight: 500;
     }
     .bookcont{
+        margin-right: 0px;
         width: 250px;
-        height: 350px;
+        height: 370px;
     }
     .bocov{
         height: 236px;
     }
+    .bocov2{
+        height: 236px;
+    }
     .infosec{
-        height: 97px;
+        height: 95px;
     }
     .booksec{
         margin-top: 45px ;
     }
     .download-btn{
-        margin-top: 10px;
         width: 130px;
         font-size: 15px;
-        margin-left: 55px;
     }
-    
+    h5{
+        margin-top: 25px;
+    }
 }
 @media (min-width:468px) and (max-width:700px){
     .nav-width{
