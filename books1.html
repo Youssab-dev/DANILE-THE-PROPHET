@@ -24,7 +24,10 @@
                   <a class="nav-link" aria-current="page" href="Main.html">الصفحة الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">كتاب</a>
+                    <a class="nav-link active" href="#">كتب</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="Aboutus.html">عنا</a>
                   </li>
               </ul>
               <div  style="max-width: 100%; float: right; margin-top: 20px;"><button onclick="darkmm()"  id="darkmode" style="border: 2px solid white; border-radius: 10px 10px 10px 10px; color: #f1f1f1; background-color: #333; transition: background-color ease-in-out 0.5s !important;     font-size: 20px;
@@ -34,9 +37,17 @@
         </div>
       </nav>
       <div class="hebook">
-        <h2>.كتاب عن دانيال النبى</h2>
+        <h2>.كتب عن دانيال النبى</h2>
       </div>
       <div class="booksec">
+        <div class="bookcont">
+          <div class="bocov2">
+          </div>
+          <div class="infosec">
+              <h5>المؤلف:ابونا داود لمعى </h5>
+              <a href="ابونا داود لمعى.pdf" class="download-btn">تنزيل</a>
+          </div>
+       </div>
           <div class="bookcont">
               <div class="bocov">
               </div>
@@ -55,6 +66,7 @@
           $("h2").toggleClass('textsh')      
           $(".card").toggleClass('cardto')
           $('.bocov').toggleClass('bonight')
+          $('.bocov2').toggleClass('bonight')
           $('.download-btn').toggleClass('download-night')
         })
         function darkmm(){
