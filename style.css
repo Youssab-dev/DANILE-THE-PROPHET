@@ -155,6 +155,17 @@ img{
     margin-top: 5%;
     font-size: 30px;
 }
+.aboutcon{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.aboutconta{
+    font-weight: 600;
+    font-size: 30px;
+    border: 3px #333 solid;
+    box-shadow: 0px 0px 20px;
+}
 @media (min-width:0px) and (max-width:467px){
     .nav-width{
         width: 200px !important;
@@ -204,6 +215,12 @@ img{
     .pcont{
         font-size: 23px;
         margin-top: 20%;
+    }
+    .aboutcon{
+        margin-top: 20%;
+    }
+    .aboutconta{
+        width: 320px;
     }
 }
 @media (min-width:468px) and (max-width:700px){
